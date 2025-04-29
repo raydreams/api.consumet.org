@@ -1,3 +1,13 @@
 [build]
   command = "npx expo export:web"
   publish = "web-build"
+
+ module.exports = {
+  resolve: {
+    fallback: {
+      fs: false,
+      path: false,
+      // Add other Node.js core modules you're using
+    }
+  }
+};
