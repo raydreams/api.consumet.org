@@ -1,13 +1,7 @@
 [build]
-  command = "npx expo export:web"
+  command = "npm run build:web"
   publish = "web-build"
 
- module.exports = {
-  resolve: {
-    fallback: {
-      fs: false,
-      path: false,
-      // Add other Node.js core modules you're using
-    }
-  }
-};
+[build.environment]
+  NODE_VERSION = "18"
+  NODE_ENV = "production"
