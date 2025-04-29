@@ -7,7 +7,7 @@
     "dev": "nodemon src/main.ts",
     "build": "tsc",
     "lint": "prettier --write \"src/**/*.ts\"",
-    "build:web": "webpack --config webpack.config.js && npx expo export:web"
+    "build:web": "npx webpack --config webpack.config.js && npx expo export:web"
   },
   "engines": {
     "node": ">=12.5.0",
@@ -38,14 +38,14 @@
     "react-native-web": "~0.19.6",
     "reconnecting-websocket": "^4.4.0",
     "ts-node": "^10.9.1",
-    "ws": "^8.8.1"
+    "ws": "^8.8.1",
+    "webpack": "^5.99.7",
+    "webpack-cli": "^6.0.1"
   },
   "devDependencies": {
     "expo-cli": "^6.3.10",
     "nodemon": "3.0.1",
     "prettier": "^3.0.0",
-    "typescript": "5.3.3",
-    "webpack": "^5.99.7",
-    "webpack-cli": "^6.0.1"
+    "typescript": "5.3.3"
   }
 }
